@@ -18,18 +18,29 @@ fichier sans rapport avec un post en cours. Le repo
 [`com-mairie`](https://github.com/xavier639/com-mairie) (le code du skill
 et de l'agent) reste privé — ne pas confondre les deux.
 
+## Nommage — obligatoire
+
+`flyers/<commune>/AAAA-MM-JJ-<slug>.<ext>`
+
+Le préfixe est la **date de l'événement**, pas celle de l'ajout du fichier.
+C'est ce qui rend le nettoyage mécanique : sans lui, personne ne peut
+savoir quand un visuel devient obsolète.
+
+Exemple : `flyers/seraincourt/2026-09-04-cinema-plein-air-wall-e.jpg`
+
 ## Hygiène
 
-Une fois l'événement passé et le post vérifié publié, supprimer le fichier
-correspondant :
+Le nettoyage est scripté, plus manuel :
 
 ```bash
-git rm flyers/<commune>/<fichier>
-git commit -m "Cleanup: retire visuel après publication"
-git push
+./cleanup.sh          # liste ce qui serait supprimé (sans risque)
+./cleanup.sh --apply  # supprime, commit et pousse
 ```
 
-Pour ne jamais laisser le repo grossir indéfiniment.
+Le script supprime tout visuel dont la date d'événement est passée, et
+signale (sans jamais les supprimer) les fichiers qui n'ont pas de préfixe
+de date. À lancer quand on passe dans le repo — ou depuis la routine
+quotidienne, qui a ce dépôt rattaché.
 
 ## Pour un nouvel opérateur (nouvelle commune, transfert à la mairie)
 
