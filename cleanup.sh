@@ -43,5 +43,5 @@ fi
 
 git rm -q "${expired[@]}"
 git commit -q -m "Cleanup: retire $(( ${#expired[@]} )) visuel(s) après publication"
-git push -q
+git push -q -u origin HEAD
 echo "Fait."
