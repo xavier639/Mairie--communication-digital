@@ -1,4 +1,4 @@
-# com-mairie-media
+# Mairie--communication-digital
 
 Hébergement temporaire et **volontairement public** des visuels (affiches
 d'événements) utilisés pour programmer des posts Facebook via Metricool,
