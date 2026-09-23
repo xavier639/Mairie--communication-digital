@@ -1,9 +1,9 @@
-# Mairie--communication-digital
+# mairie--visuels-publics
 
 Hébergement temporaire et **volontairement public** des visuels (affiches
 d'événements) utilisés pour programmer des posts Facebook via Metricool,
 pour le compte du skill/agent
-[`com-mairie`](https://github.com/xavier639/com-mairie).
+[`com-mairie`](https://github.com/xavier639/mairie--communication).
 
 Les fichiers dans `flyers/<commune>/` sont des affiches d'événements
 municipaux déjà destinées à une publication Facebook publique — leur
@@ -15,7 +15,7 @@ renvoie une page de connexion au lieu du fichier).
 **Règle stricte : ce repo ne contient jamais que des visuels destinés à un
 post public.** Jamais de document interne, de donnée personnelle, ou de
 fichier sans rapport avec un post en cours. Le repo
-[`com-mairie`](https://github.com/xavier639/com-mairie) (le code du skill
+[`com-mairie`](https://github.com/xavier639/mairie--communication) (le code du skill
 et de l'agent) reste privé — ne pas confondre les deux.
 
 ## Nommage — obligatoire
